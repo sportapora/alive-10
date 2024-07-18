@@ -8,7 +8,7 @@ use Inertia\Inertia;
 
 class PagesController extends Controller
 {
-    public function index(){
+    public function home(){
         return Inertia::render('Posts/Home');
     }
 }
