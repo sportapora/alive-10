@@ -11,4 +11,7 @@ class PagesController extends Controller
     public function home(){
         return Inertia::render('Posts/Home');
     }
+    public function about(){
+        return Inertia::render('Posts/About');
+    }
 }
