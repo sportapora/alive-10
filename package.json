@@ -20,6 +20,10 @@
         "vite": "^5.0"
     },
     "dependencies": {
-        "@reacticons/ionicons": "^7.1.0"
+        "@reacticons/ionicons": "^7.1.0",
+        "gsap": "^3.12.5",
+        "jquery": "^3.7.1",
+        "react-fancy-circular-carousel": "^1.0.8",
+        "swiper": "^11.1.10"
     }
 }

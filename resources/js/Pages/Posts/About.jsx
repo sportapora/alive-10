@@ -1,3 +1,4 @@
+import Division from '@/Components/About/Division'
 import LandingAbout from '@/Components/About/LandingAbout'
 import MascotAbout from '@/Components/About/MascotAbout'
 import Navbar from '@/Components/SmallComp/Navbar'
@@ -10,6 +11,7 @@ function About() {
         <Navbar />
         <LandingAbout />
         <MascotAbout />
+        <Division></Division>
       </div>
     </>
   )
