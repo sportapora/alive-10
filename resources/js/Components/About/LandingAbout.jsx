@@ -3,7 +3,7 @@ import React from 'react'
 function LandingAbout() {
   return (
     <>
-        <div className='bg-[#EAC09E] h-screen md:p-20 p-10 overflow-hidden'>
+        <div className='bg-[#EAC09E] h-screen md:p-0 p-10 overflow-hidden'>
             <div className='flex md:flex-row flex-col gap-20 items-center justify-center relative top-20'>
                 <div className='flex flex-col text-black md:text-justify text-center md:w-[40%] w-[80%]'>
                     <h1 className='font-extrabold font-jost md:text-[50px] text-[28px]'>

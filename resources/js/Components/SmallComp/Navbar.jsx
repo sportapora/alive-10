@@ -18,8 +18,8 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0 || open) {
-        setNavBackground('bg-black bg-opacity-50');
-        setTextColor('text-white');
+        setNavBackground('bg-[#EAC09E] bg-opacity-60');
+        setTextColor('text-black');
       } else {
         setNavBackground('bg-transparent');
         setTextColor('text-black');
