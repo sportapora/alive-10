@@ -30,7 +30,7 @@ function Carousel() {
                         peripheralImageRadius={80}
                         centralImageRadius={0}
                         focusElementStyling={{ border: '5px solid #ba4949' }}
-                        autoRotateTime={10}
+                        autoRotateTime={5}
                         borderWidth={0}
                         borderHexColor={'1c364f'}
                         setFocusElement={setFocusElement}
@@ -38,7 +38,7 @@ function Carousel() {
                     />
                     <div className="text-black relative left-[200px] w-[700px]">
                         <h1 className='text-[40px] font-extrabold font-jost'>{info[focusElement]}</h1>
-                        <p>{desc[focusElement]}</p>
+                        <p className='text-justify'>{desc[focusElement]}</p>
                     </div>
                 </div>
                 <div className="relative top-[-850px] left-[-100px] w-[900px] h-[900px] border-[6px] border-black rounded-full inset-0 z-10"></div>
