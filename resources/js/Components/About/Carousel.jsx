@@ -3,10 +3,10 @@ import FancyCarousel from 'react-fancy-circular-carousel';
 import 'react-fancy-circular-carousel/FancyCarousel.css';
 import  DataDivisi  from './DataDivisi';
 
-const images = import.meta.glob('../../../../public/Assets/Images/divisiLogo/*.webp', { eager: true });
+const images = import.meta.glob('/public/Assets/Images/divisiLogo/*.webp', { eager: true });
 
 const getImageByName = (name) => {
-    const path = `../../../../public/Assets/Images/divisiLogo/${name}.webp`;
+    const path = `/public/Assets/Images/divisiLogo/${name}.webp`;
     return images[path]?.default || images[path] || null;
 };
 
@@ -70,7 +70,7 @@ function Carousel() {
                         <p className='text-left'>{desc[focusElement]}</p>
                     </div>
                 </div>
-                <div className="relative top-[-950px] left-[-100px] w-[600px] h-[600px] border-[9px] border-black rounded-full inset-0 z-10"></div>
+                <div className="relative top-[-700px] left-[-100px] w-[600px] h-[600px] border-[9px] border-black rounded-full inset-0 z-10"></div>
             </div>
         </>
     )
