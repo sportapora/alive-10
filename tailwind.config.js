@@ -31,7 +31,7 @@ export default {
             'extra-bold': '800',
             black: '900',
             'extraxx-bold': '900'
-          }
+          },
     },
 
     plugins: [forms],
