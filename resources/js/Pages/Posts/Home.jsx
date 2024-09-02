@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Navbar from "@/Components/SmallComp/Navbar";
+import LandingHome from "@/Components/Home/LandingHome";
+import Filosofi from "@/Components/Home/Filosofi";
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
+    return (
+        <div>
+            <Navbar />
+            <LandingHome />
+            <Filosofi />
+        </div>
+    );
 }
 
-export default Home
+export default Home;

@@ -24,6 +24,7 @@
         "gsap": "^3.12.5",
         "jquery": "^3.7.1",
         "react-fancy-circular-carousel": "^1.0.8",
+        "react-wavify": "^1.11.1",
         "swiper": "^11.1.10"
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Inertia\Middleware;
 
 class HandleInertiaRequests extends Middleware
@@ -37,4 +38,30 @@ class HandleInertiaRequests extends Middleware
             'message' => fn () => $request->session()->get('message'),
         ];
     }
+    /**
+     * Get a list of image URLs from the specified directory.
+     *
+     * @param string $path
+     * @return array
+     */
+
+    // private function getImages(string $path): array
+    // {
+    //      $directory = public_path($path);
+     
+    //      if (!File::exists($directory)) {
+    //          return [];
+    //      }
+     
+    //      $files = File::files($directory);
+     
+    //      $images = array_filter($files, function ($file) {
+    //          $allowedExtensions = ['jpg', 'jpeg', 'png', 'webp', 'gif']; 
+    //          return in_array($file->getExtension(), $allowedExtensions);
+    //      });
+     
+    //      return array_map(function ($file) use ($path) {
+    //          return asset($path . '/' . $file->getFilename());
+    //      }, $images);
+    // } (Untuk backup saja)
 }

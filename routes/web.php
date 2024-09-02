@@ -11,6 +11,7 @@ use Inertia\Inertia;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
+Route::get('/flow', [PagesController::class, 'flow'])->name('flow');
 
  Route::get('/dashboard', function () {
      return Inertia::render('Dashboard');

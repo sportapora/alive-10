@@ -14,7 +14,8 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                'jost': ['JOST', 'cursive']
+                'jost': ['Jost', 'cursive'],
+                'modak': ['Modak', 'cursive']
             },
         },
         fontWeight: {
@@ -30,7 +31,7 @@ export default {
             'extra-bold': '800',
             black: '900',
             'extraxx-bold': '900'
-          }
+          },
     },
 
     plugins: [forms],

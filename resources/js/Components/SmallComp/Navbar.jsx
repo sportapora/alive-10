@@ -1,25 +1,36 @@
-import IonIcon from '@reacticons/ionicons';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import IonIcon from '@reacticons/ionicons'; // library untuk icon
 import Alive from '../../../../public/Assets/Images/alivelogo.png';
 import Medic from '../../../../public/Assets/Images/medic_umn.png';
 
 function Navbar() {
-  let Links = [
+  const Links = [
     { name: "HOME", link: "/" },
     { name: "ABOUT", link: "/about" },
     { name: "FLOW", link: "/" },
-    { name: "GALLERY", link: "/" },
+    { name: "GALLERY", subLinks: [
+        { name: "Rapat Pleno 1", link: "/gallery/pleno1" },
+        { name: "Rapat Pleno 2", link: "/gallery/pleno2" },
+        { name: "Rapat Pleno 2", link: "/gallery/dokumentasi" },
+        { name: "Booth", link: "/gallery/dokumentasi" },
+        { name: "Workshop", link: "/gallery/dokumentasi" },
+        { name: "Talkshow", link: "/gallery/dokumentasi" },
+      ]
+    },
   ];
 
-  let [open, setOpen] = useState(false);
-  let [navBackground, setNavBackground] = useState('bg-transparent');
-  let [textColor, setTextColor] = useState('text-black');
+  const [open, setOpen] = useState(false);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [navBackground, setNavBackground] = useState('bg-transparent');
+  const [textColor, setTextColor] = useState('text-black');
+
+  const galleryRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0 || open) {
-        setNavBackground('bg-[#EAC09E] bg-opacity-60');
-        setTextColor('text-black');
+        setNavBackground('bg-[#C97A40] bg-opacity-60');
+        setTextColor('text-white');
       } else {
         setNavBackground('bg-transparent');
         setTextColor('text-black');
@@ -32,6 +43,16 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [open]);
+
+  useEffect(() => {
+    if (galleryOpen) {
+      galleryRef.current.style.height = `${galleryRef.current.scrollHeight}px`;
+      galleryRef.current.style.opacity = '1';
+    } else {
+      galleryRef.current.style.height = '0px';
+      galleryRef.current.style.opacity = '0';
+    }
+  }, [galleryOpen]);
 
   return (
     <div className={`w-[100%] fixed top-0 left-0 z-50 ${navBackground} transition-colors duration-300`}>
@@ -54,9 +75,24 @@ function Navbar() {
             </a>
           </li>
           {
-            Links.map((Link, index) => (
-              <li key={Link.name} className={`md:ml-8 text-[16px] hover:text-gray-300 md:my-0 mr-6 my-7 text-center ${index === 0 ? 'hidden' : 'block'} ${textColor}`}>
-                <a href={Link.link}>{Link.name}</a>
+            Links.slice(1).map((Link, index) => (
+              <li key={Link.name} className={`md:ml-8 text-[16px] hover:text-white md:my-0 mr-6 my-7 text-center ${textColor}`}>
+                {Link.subLinks ? (
+                  <>
+                    <div className="flex items-center justify-center cursor-pointer" onClick={() => setGalleryOpen(!galleryOpen)}>
+                      {Link.name} <IonIcon name={galleryOpen ? 'chevron-up' : 'chevron-down'} className="ml-2"></IonIcon>
+                    </div>
+                    <ul ref={galleryRef} className={`overflow-hidden transition-all duration-500 ease-in-out opacity-0 h-0`}>
+                      {Link.subLinks.map((subLink, subIndex) => (
+                        <li key={subIndex} className="hover:text-gray-500">
+                          <a href={subLink.link}>{subLink.name}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <a href={Link.link}>{Link.name}</a>
+                )}
               </li>
             ))
           }
