@@ -14,7 +14,8 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                'jost': ['JOST', 'cursive']
+                'jost': ['JOST', 'cursive'],
+                'modak': ['Modak', 'cursive']
             },
         },
         fontWeight: {

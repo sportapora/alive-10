@@ -6,3 +6,8 @@
     font-family: JOST;
     src: url(/public/Assets/Fonts/Jost/Jost-VariableFont_wght.ttf);
 }
+
+@font-face {
+    font-family: Modak;
+    src: url(/public/Assets/Fonts/Modak/Modak-Regular.ttf);
+}
