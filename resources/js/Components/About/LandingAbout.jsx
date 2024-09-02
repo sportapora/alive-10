@@ -17,7 +17,7 @@ function LandingAbout() {
                 </div>
                 <div className='flex flex-row mt-20'>
                     <div className='md:w-[400px] md:h-[600px] rounded-[60px] w-[350px] h-[400px] md:relative absolute md:top-0 md:left-0 top-[100%] right-[20%] bg-white'></div>
-                    <div className='md:w-[300px] md:h-[400px] rounded-[60px] w-[200px] h-[300px] absolute inset-0 md:top-[20%] md:left-[75%] top-[70%] left-[60%] bg-slate-300'></div>
+                    <div className='md:w-[300px] md:h-[400px] rounded-[60px] w-[250px] h-[300px] absolute inset-0 md:top-[25%] md:left-[75%] top-[70%] left-[50%] bg-slate-300'></div>
                 </div>
             </div>
         </div>
