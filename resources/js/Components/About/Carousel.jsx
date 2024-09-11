@@ -51,6 +51,7 @@ function Carousel() {
                 <div className="relative top-[-850px] left-[-100px] w-[900px] h-[900px] border-[6px] border-black rounded-full inset-0 z-10"></div>
             </div>
             <div className='md:hidden block relative left-[-0.2%] top-[-36%]'>
+                <div className="absolute left-1/2 -translate-x-2/4 top-0 ml-0 mr-0 items-center w-[600px] h-[600px] border-[9px] border-black rounded-full z-10"></div>
                 <div className='relative flex flex-col items-center z-50'>
                     <FancyCarousel
                         images={imagePaths}
@@ -70,7 +71,7 @@ function Carousel() {
                         <p className='text-left'>{desc[focusElement]}</p>
                     </div>
                 </div>
-                <div className="relative top-[-700px] left-[-100px] w-[600px] h-[600px] border-[9px] border-black rounded-full inset-0 z-10"></div>
+                
             </div>
         </>
     )
