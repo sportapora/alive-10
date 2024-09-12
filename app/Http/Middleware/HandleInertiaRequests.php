@@ -35,6 +35,9 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
+            'flash' => [
+                'message' => fn() => $request->session()->get('message'),
+            ],
         ];
     }
     /**
@@ -47,18 +50,18 @@ class HandleInertiaRequests extends Middleware
     // private function getImages(string $path): array
     // {
     //      $directory = public_path($path);
-     
+
     //      if (!File::exists($directory)) {
     //          return [];
     //      }
-     
+
     //      $files = File::files($directory);
-     
+
     //      $images = array_filter($files, function ($file) {
-    //          $allowedExtensions = ['jpg', 'jpeg', 'png', 'webp', 'gif']; 
+    //          $allowedExtensions = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
     //          return in_array($file->getExtension(), $allowedExtensions);
     //      });
-     
+
     //      return array_map(function ($file) use ($path) {
     //          return asset($path . '/' . $file->getFilename());
     //      }, $images);
