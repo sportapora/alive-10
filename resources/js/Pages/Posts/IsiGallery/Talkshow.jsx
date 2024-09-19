@@ -1,5 +1,5 @@
 import Navbar from '@/Components/SmallComp/Navbar'
-import Footer from '@/Components/SmallComp/Footer'
+import FooterGallery from '@/Components/SmallComp/FooterGallery.jsx'
 import React from 'react'
 import {Head} from "@inertiajs/react";
 import Introduction from '@/Components/Gallery/Introduction'
@@ -11,7 +11,7 @@ function Gallery() {
       <div>
         <Navbar />
         <Introduction theme="light" bgimg="bottle"/>
-        <Footer />
+        <FooterGallery />
       </div>
     </>
   )
