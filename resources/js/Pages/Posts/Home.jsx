@@ -6,7 +6,7 @@ import Filosofi from "@/Components/Home/Filosofi";
 function Home() {
     return (
         <div>
-            <Navbar />
+            <Navbar color="orange"/>
             <LandingHome />
             <Filosofi />
         </div>

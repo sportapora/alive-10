@@ -1,43 +1,48 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "@inertiajs/react";
-import IonIcon from "@reacticons/ionicons"; // library untuk icon
+import IonIcon from "@reacticons/ionicons"; // library for icons
 import Alive from "../../../../public/Assets/Images/alivelogo.png";
 import Medic from "../../../../public/Assets/Images/medic_umn.png";
 
-function Navbar() {
+function Navbar({ color }) {
     const Links = [
         { name: "HOME", link: "/" },
         { name: "ABOUT", link: "/about" },
         { name: "FLOW", link: "/flow" },
         { name: "GALLERY", link: "/gallery" },
-        {
-            name: "",
-            subLinks: [
-                { name: "Rapat Pleno 1", link: "/gallery/pleno1" },
-                { name: "Rapat Pleno 2", link: "/gallery/pleno2" },
-                { name: "Rapat Pleno 3", link: "/gallery/pleno3" },
-                { name: "Booth", link: "/gallery/booth" },
-                { name: "Workshop", link: "/gallery/workshop" },
-                { name: "Talkshow", link: "/gallery/talkshow" },
-            ],
-        },
     ];
 
     const [open, setOpen] = useState(false);
-    const [galleryOpen, setGalleryOpen] = useState(false);
     const [navBackground, setNavBackground] = useState("bg-transparent");
     const [textColor, setTextColor] = useState("text-black");
 
-    const galleryRef = useRef(null);
+    // Function to dynamically change the navbar color based on the color prop
+    const changeNavbarColor = (color) => {
+        switch (color) {
+            case "orange":
+                setNavBackground("bg-[#C97A40] bg-opacity-60 backdrop-blur-md");
+                setTextColor("text-white");
+                break;
+            case "light orange":
+                setNavBackground("bg-[#EAC09E] bg-opacity-60 backdrop-blur-md");
+                setTextColor("text-white");
+                break;
+            case "purple":
+                setNavBackground("bg-[#B719ED] bg-opacity-60 backdrop-blur-md");
+                setTextColor("text-white");
+                break;
+            default:
+                setNavBackground("bg-transparent");
+                setTextColor("text-black");
+        }
+    };
 
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0 || open) {
-                setNavBackground("bg-[#C97A40] bg-opacity-60 backdrop-blur-md");
-                setTextColor("text-white");
+                changeNavbarColor(color);  // Use the color prop here
             } else {
-                setNavBackground("bg-transparent backdrop-blur-none");
-                setTextColor("text-black");
+                changeNavbarColor("transparent");
             }
         };
 
@@ -46,17 +51,7 @@ function Navbar() {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, [open]);
-
-    useEffect(() => {
-        if (galleryOpen) {
-            galleryRef.current.style.height = `${galleryRef.current.scrollHeight}px`;
-            galleryRef.current.style.opacity = "1";
-        } else {
-            galleryRef.current.style.height = "0px";
-            galleryRef.current.style.opacity = "0";
-        }
-    }, [galleryOpen]);
+    }, [open, color]);
 
     return (
         <div
@@ -94,55 +89,12 @@ function Navbar() {
                     : "top-[-490px] bg-transparent"
             } ${textColor}`}
                 >
-                    <li className="lg:ml-8 mr-6 lg:my-0 my-7 text-center">
-                        <Link href={Links[0].link} className="hover:text-white">
-                            {Links[0].name}
-                        </Link>
-                    </li>
-                    {Links.slice(1).map((link, index) => (
+                    {Links.map((link, index) => (
                         <li
-                            key={link.name}
+                            key={index}
                             className={`lg:ml-8 text-[16px] hover:text-white lg:my-0 mr-6 my-7 text-center ${textColor}`}
                         >
-                            {link.subLinks ? (
-                                <>
-                                    <div
-                                        className="flex items-center justify-center cursor-pointer"
-                                        onClick={() =>
-                                            setGalleryOpen(!galleryOpen)
-                                        }
-                                    >
-                                        {link.name}{" "}
-                                        <IonIcon
-                                            name={
-                                                galleryOpen
-                                                    ? "chevron-up"
-                                                    : "chevron-down"
-                                            }
-                                            className="ml-2"
-                                        ></IonIcon>
-                                    </div>
-                                    <ul
-                                        ref={galleryRef}
-                                        className={`overflow-hidden transition-all duration-500 ease-in-out opacity-0 h-0`}
-                                    >
-                                        {link.subLinks.map(
-                                            (subLink, subIndex) => (
-                                                <li
-                                                    key={subIndex}
-                                                    className="hover:text-gray-500"
-                                                >
-                                                    <Link href={subLink.link}>
-                                                        {subLink.name}
-                                                    </Link>
-                                                </li>
-                                            )
-                                        )}
-                                    </ul>
-                                </>
-                            ) : (
-                                <Link href={link.link}>{link.name}</Link>
-                            )}
+                            <Link href={link.link}>{link.name}</Link>
                         </li>
                     ))}
                 </ul>

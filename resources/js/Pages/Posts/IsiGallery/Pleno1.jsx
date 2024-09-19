@@ -9,7 +9,7 @@ function Gallery() {
     <>
         <Head title="Gallery" />
       <div>
-        <Navbar />
+        <Navbar color="orange"/>
         <Introduction theme="dark" bgimg="shelf" />
         <FooterGallery />
       </div>

@@ -11,7 +11,7 @@ function About() {
     <>
         <Head title="About Us" />
       <div>
-        <Navbar />
+        <Navbar color="light orange"/>
         <LandingAbout />
         <MascotAbout />
         <Division></Division>
