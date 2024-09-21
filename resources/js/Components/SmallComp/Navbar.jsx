@@ -42,7 +42,7 @@ function Navbar() {
             <img src={Alive} alt="logo_alive" className='md:h-20 w-auto h-10' />
           </span>
         </div>
-        <div onClick={() => setOpen(!open)} className={`text-3xl absolute right-8 top-9 cursor-pointer md:hidden ${textColor}`}>
+        <div onClick={() => setOpen(!open)} className={`text-3xl absolute right-8 top-9 cursor-pointer md:hidden ${textColor} z-50`}>
           <IonIcon name={open ? 'close' : 'menu'}></IonIcon>
         </div>
         <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0
