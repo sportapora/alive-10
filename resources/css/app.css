@@ -11,3 +11,7 @@
     font-family: Modak;
     src: url('/Assets/Fonts/Modak/Modak-Regular.ttf');
 }
+
+body, html {
+    overflow-x: hidden;
+}

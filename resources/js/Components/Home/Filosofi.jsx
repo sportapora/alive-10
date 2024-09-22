@@ -1,7 +1,4 @@
 import React from "react";
-import Arm from "../../../../public/Assets/Images/home_assets/ARM.png";
-import Heart from "../../../../public/Assets/Images/home_assets/HEART.png";
-import Cross from "../../../../public/Assets/Images/home_assets/CROSS.png";
 
 const LogoPhilosophy = () => {
     return (
@@ -12,7 +9,7 @@ const LogoPhilosophy = () => {
                     <div
                         className="w-12 h-12 bg-contain bg-no-repeat mb-4"
                         style={{
-                            backgroundImage: Arm,
+                            backgroundImage: `url("Assets/Images/home_assets/ARM.png")`,
                         }}
                     ></div>
                     <p className="text-lg text-gray-800">Arm</p>
@@ -21,7 +18,7 @@ const LogoPhilosophy = () => {
                     <div
                         className="w-12 h-12 bg-contain bg-no-repeat mb-4"
                         style={{
-                            backgroundImage: Heart,
+                            backgroundImage: `url("Assets/Images/home_assets/HEART.png")`,
                         }}
                     ></div>
                     <p className="text-lg text-gray-800">Heart</p>
@@ -30,7 +27,7 @@ const LogoPhilosophy = () => {
                     <div
                         className="w-12 h-12 bg-contain bg-no-repeat mb-4"
                         style={{
-                            backgroundImage: Cross,
+                            backgroundImage: `url("Assets/Images/home_assets/CROSS.png")`,
                         }}
                     ></div>
                     <p className="text-lg text-gray-800">Cross</p>

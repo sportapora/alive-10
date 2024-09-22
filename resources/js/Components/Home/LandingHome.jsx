@@ -38,7 +38,7 @@ export default function LandingHome() {
                     <div className="bg-[#EAC09E] flex-grow p-0"></div>
                 </div>
             </div>
-            <img src="Assets/Images/home_assets/Asset_Kanan.png" alt="Right Decoration" className="absolute top-[250px] right-[-80px] overflow-hidden z-20"/>
+            <img src="Assets/Images/home_assets/Asset_Kanan.png" alt="Right Decoration" className="absolute top-[250px] right-[-150px] w-80 overflow-hidden z-20"/>
         </div>
     );
 }
