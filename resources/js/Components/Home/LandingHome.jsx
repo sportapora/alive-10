@@ -16,13 +16,13 @@ export default function LandingHome() {
                             <b>Harmonize </b>Your Skin <b>Confidence</b> Within
                         </h2>
                     </div>
-                    <div className="grid relative justify-left w-[1050px] z-10">
+                    <div className="grid justify-left w-[1050px] z-10">
                         <img
                             src="/Assets/Images/home_assets/Ellipse.png"
-                            className="absolute right-[500px] top-[-300px]  w-[305px] md:w-[700px]"
+                            className="relative right-[500px] top-[-300px]  w-[305px] md:w-[700px]"
                             alt="Ellipse"
                         />
-                        <div className="absolute left-[-300px] top-[-400px] right-[100px] grid grid-cols-1 z-10">
+                        <div className="relative left-[-300px] top-[-400px] right-[100px] grid grid-cols-1 z-10">
                             <img
                                 src="Assets/Images/home_assets/maskot merged.png"
                                 alt="Maskot"
