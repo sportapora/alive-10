@@ -1,13 +1,14 @@
 import React from "react";
 
 export default function LandingHome() {
-
     return (
         <div className="overflow-hidden">
             <div className="flex flex-col h-screen overflow-hidden bg-[#ED9947]">
                 <div className="bg-[#ED9947] grid md:grid-cols-2 gap-4 relative items-center top-20 md:top-[30%] translateY-[-50%] md:left-20 flex-grow flex-shrink basis-auto z-0">
                     <div className="w-[100%] font-jost text-white text-center md:text-left">
-                        <h2 className="text-2xl md:text-5xl">Welcome to</h2>
+                        <h2 className="text-2xl md:text-5xl mb-2">
+                            Welcome to
+                        </h2>
                         <h1 className="font-modak text-[50px] text-8xl md:text-[170px]">
                             ALIVE 10.0
                         </h1>
@@ -22,13 +23,19 @@ export default function LandingHome() {
                             alt="Ellipse"
                         />
                         <div className="absolute left-0 right-0 grid grid-cols-1 justify-center z-10">
-                            <img src="Assets/Images/home_assets/maskot merged.png" alt="Maskot" />
+                            <img
+                                src="Assets/Images/home_assets/maskot merged.png"
+                                alt="Maskot"
+                            />
                         </div>
                     </div>
                 </div>
 
                 <div className="flex flex-auto flex-col relative z-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 300"
+                    >
                         <path
                             fill="#EAC09F"
                             fillOpacity="1"
@@ -38,7 +45,11 @@ export default function LandingHome() {
                     <div className="bg-[#EAC09E] flex-grow p-0"></div>
                 </div>
             </div>
-            <img src="Assets/Images/home_assets/Asset_Kanan.png" alt="Right Decoration" className="absolute top-[250px] right-[-150px] w-80 overflow-hidden z-20"/>
+            <img
+                src="Assets/Images/home_assets/Asset_Kanan.png"
+                alt="Right Decoration"
+                className="absolute top-[250px] right-[-150px] w-80 overflow-hidden z-20"
+            />
         </div>
     );
 }
