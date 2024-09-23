@@ -50,6 +50,11 @@ export default function LandingHome() {
                 alt="Right Decoration"
                 className="absolute top-[250px] right-[-150px] w-80 overflow-hidden z-20"
             />
+            <img
+                src="Assets/Images/home_assets/tube.png"
+                alt="Left Decoration"
+                className="absolute top-[480px] left-[-190px] overflow-hidden z-20"
+            />
         </div>
     );
 }
