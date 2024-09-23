@@ -16,13 +16,13 @@ export default function LandingHome() {
                             <b>Harmonize </b>Your Skin <b>Confidence</b> Within
                         </h2>
                     </div>
-                    <div className="grid relative items-center justify-center z-10">
+                    <div className="grid relative justify-left w-[1050px] z-10">
                         <img
                             src="/Assets/Images/home_assets/Ellipse.png"
-                            className="w-[305px] md:w-[400px]"
+                            className="absolute right-[500px] top-[-300px]  w-[305px] md:w-[700px]"
                             alt="Ellipse"
                         />
-                        <div className="absolute left-0 right-0 grid grid-cols-1 justify-center z-10">
+                        <div className="absolute left-[-300px] top-[-400px] right-[100px] grid grid-cols-1 z-10">
                             <img
                                 src="Assets/Images/home_assets/maskot merged.png"
                                 alt="Maskot"
@@ -48,7 +48,7 @@ export default function LandingHome() {
             <img
                 src="Assets/Images/home_assets/Asset_Kanan.png"
                 alt="Right Decoration"
-                className="absolute top-[250px] right-[-150px] w-80 overflow-hidden z-20"
+                className="absolute top-[380px] right-[-260px] w-[700px] overflow-hidden z-20"
             />
             <img
                 src="Assets/Images/home_assets/tube.png"
