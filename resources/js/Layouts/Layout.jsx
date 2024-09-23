@@ -4,7 +4,7 @@ import FooterFlow from "@/Components/FooterFlow.jsx";
 const Layout = ({ classname = "bg-transparent h-auto", children }) => {
     return (
         <>
-            <Navbar />
+            <Navbar color="purple"/>
             <main className={`${classname} `}>{children}</main>
             <FooterFlow />
         </>
