@@ -10,21 +10,7 @@ function LandingAbout() {
                             About ALIVE
                         </h1>
                         <p className="md:text-[20px] text-[10px] text-left">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Deserunt a est molestiae ut excepturi et, iure
-                            voluptates, recusandae in, incidunt facilis quod
-                            quam neque quibusdam dicta? Quis libero quidem
-                            tempora. Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Commodi asperiores consequatur
-                            perferendis dolorem nisi illo esse quisquam neque
-                            est maxime nobis placeat minus, nemo nesciunt iusto
-                            deleniti aspernatur cupiditate. Suscipit.
-                            <br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Minus quam voluptate deserunt quas ipsa
-                            deleniti repellat rem! Repudiandae architecto modi
-                            dolores minus excepturi, voluptatem quo expedita
-                            deleniti distinctio sunt perferendis!
+                            ALIVE 10.0 adalah acara tahunan yang merupakan program kerja dari UMN Medical Center. Kembali hadir dengan tema “Skin Healthiness” yang merupakan edukasi tentang kesehatan kulit, dirancang untuk memberikan pengetahuan mendalam dan praktis tentang perawatan kulit. Acara ini mencakup berbagai rangkaian kegiatan menarik, seperti Booth Kesehatan, Workshop, serta diakhiri dengan Talk Show yang merupakan puncak acara ALIVE 10.0. Maskot ALIVE 10.0 dengan tema “hydration” menghadirkan maskot bernama Hydra dan Hydro untuk menginspirasi peserta dalam menjaga kelembapan dan kesehatan kulit. Acara ini bertujuan untuk meningkatkan kesadaran, memberikan informasi berguna, dan mendorong partisipasi aktif dalam merawat kulit mereka dengan cara yang menyenangkan dan edukatif.
                         </p>
                     </div>
                     <div className="flex flex-row mt-20">
