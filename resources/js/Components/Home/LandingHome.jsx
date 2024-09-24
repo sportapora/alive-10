@@ -22,9 +22,10 @@ export default function LandingHome() {
                 </div>
 
                 <div className="flex flex-shrink basis-auto flex-col relative z-5">
-                    <svg
+                    <svg 
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 1440 300"
+                        className="absolute bottom-0"
                     >
                         <path
                             fill="#EAC09F"
