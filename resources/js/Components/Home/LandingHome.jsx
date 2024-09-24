@@ -3,21 +3,22 @@ import React from "react";
 export default function LandingHome() {
     return (
         <div>
-            <div className="flex flex-col h-screen bg-[#ED9947]">
-                <div className="bg-[#ED9947] flex flex-col md:flex-row gap-4 relative items-center justify-center md:left-20 flex-auto z-0">
-                    <div className="w-screen relative z-40 font-jost text-white text-center md:text-left">
-                        <h2 className="text-2xl md:text-5xl mb-2">
+            <div className="relative flex flex-col h-screen bg-[#ED9947]">
+                <div className="bg-[#ED9947] flex flex-col lg:flex-row gap-4 relative items-center justify-center lg:left-20 flex-auto z-0">
+                    <div className="w-screen relative z-40 font-jost text-white text-center lg:text-left">
+                        <h2 className="text-2xl lg:text-5xl mb-2">
                             Welcome to
                         </h2>
-                        <h1 className="font-modak text-[50px] text-8xl md:text-[170px]">
+                        <h1 className="font-modak text-[50px] text-8xl lg:text-[170px]">
                             ALIVE 10.0
                         </h1>
-                        <h2 className="relative z-30 text-xl md:text-2xl">
+                        <h2 className="relative z-40 text-xl lg:text-2xl">
                             <b>Harmonize </b>Your Skin <b>Confidence</b> Within
                         </h2>
                     </div>
                     <div className="flex flex-row justify-center w-[1050px] z-10">
-                       <img src="Assets/Images/home_assets/maskot_merged.png" className="w-[300px] md:w-[712px]"/>
+                       <img src="Assets/Images/home_assets/maskot_merged.png" className="w-[712px] hidden lg:block"/>
+                       <img src="Assets/Images/home_assets/mobile atas.png" className="w-[400px] block lg:hidden"/>
                     </div>
                 </div>
 
@@ -39,12 +40,12 @@ export default function LandingHome() {
             <img
                 src="Assets/Images/home_assets/Asset_Kanan.png"
                 alt="Right Decoration"
-                className="absolute top-[380px] right-[-260px] w-[700px] overflow-hidden z-20"
+                className="absolute top-[380px] right-[-350px] md:right-[-260px] w-[700px] overflow-hidden z-10"
             />
             <img
                 src="Assets/Images/home_assets/tube.png"
                 alt="Left Decoration"
-                className="absolute top-[480px] left-[-190px] overflow-hidden z-20"
+                className="absolute top-[280px] md:top-[380px] left-[-250px] md:left-[-190px] w-[510px] md:w-[851px] overflow-hidden z-10"
             />
         </div>
     );
