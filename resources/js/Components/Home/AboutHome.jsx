@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutHome() {
     return (
         <>
-            <div className="flex flex-col lg:flex-row bg-[#EAC09E] flex-wrap content-center justify-center">
+            <div className="flex flex-col lg:flex-row h-screen bg-[#EAC09E] flex-wrap content-center justify-center">
                 <div className="flex justify-center">
                     <img
                         src="Assets/Images/home_assets/logo alive-04.png"
