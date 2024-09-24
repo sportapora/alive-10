@@ -5,9 +5,7 @@ const LogoPhilosophy = () => {
         <div className="bg-[#2B2B2B] text-white p-6">
             <h2 className="text-center text-2xl mb-6">Logo Philosophy</h2>
             <div className="flex md:flex-row flex-col gap-4 justify-around items-center">
-                {/* Card 1 */}
-                <div className="relative bg-gray-200 w-[40%] h-52 flex flex-col items-center justify-center rounded-lg shadow-lg">
-                    {/* Circular Icon */}
+                <div className="relative bg-gray-200 w-[40%] h-52 flex flex-col items-center rounded-lg shadow-lg">
                     <div className="absolute -top-6 w-16 h-16 bg-white rounded-full flex items-center justify-center border border-gray-300 shadow-md">
                         <div
                             className="w-12 h-12 bg-contain bg-no-repeat"
@@ -16,12 +14,10 @@ const LogoPhilosophy = () => {
                             }}
                         ></div>
                     </div>
-                    {/* Card Text */}
-                    <p className="mt-10 text-lg text-gray-800">Arm</p>
+                    <p className="mt-10 font-jost font-extrabold text-lg text-gray-800">Arm</p>
                 </div>
 
-                {/* Card 2 */}
-                <div className="relative bg-gray-200 w-[40%] h-52 flex flex-col items-center justify-center rounded-lg shadow-lg">
+                <div className="relative bg-gray-200 w-[40%] h-52 flex flex-col items-center rounded-lg shadow-lg">
                     <div className="absolute -top-6 w-16 h-16 bg-white rounded-full flex items-center justify-center border border-gray-300 shadow-md">
                         <div
                             className="w-12 h-12 bg-contain bg-no-repeat"
@@ -30,11 +26,10 @@ const LogoPhilosophy = () => {
                             }}
                         ></div>
                     </div>
-                    <p className="mt-10 text-lg text-gray-800">Heart</p>
+                    <p className="mt-10 font-jost font-extrabold text-lg text-gray-800">Heart</p>
                 </div>
 
-                {/* Card 3 */}
-                <div className="relative bg-gray-200 w-[40%] h-52 flex flex-col items-center justify-center rounded-lg shadow-lg">
+                <div className="relative bg-gray-200 w-[40%] h-52 flex flex-col items-center rounded-lg shadow-lg">
                     <div className="absolute -top-6 w-16 h-16 bg-white rounded-full flex items-center justify-center border border-gray-300 shadow-md">
                         <div
                             className="w-12 h-12 bg-contain bg-no-repeat"
@@ -43,7 +38,7 @@ const LogoPhilosophy = () => {
                             }}
                         ></div>
                     </div>
-                    <p className="mt-10 text-lg text-gray-800">Cross</p>
+                    <p className="mt-10 font-jost font-extrabold text-lg text-gray-800">Cross</p>
                 </div>
             </div>
         </div>
