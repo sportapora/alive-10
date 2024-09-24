@@ -17,13 +17,19 @@ export default function LandingHome() {
                         </h2>
                     </div>
                     <div className="flex flex-row justify-center w-[1050px] z-10">
-                       <img src="Assets/Images/home_assets/maskot_merged.png" className="w-[712px] hidden lg:block"/>
-                       <img src="Assets/Images/home_assets/mobile atas.png" className="w-[400px] block lg:hidden"/>
+                        <img
+                            src="Assets/Images/home_assets/maskot_merged.png"
+                            className="w-[712px] hidden lg:block"
+                        />
+                        <img
+                            src="Assets/Images/home_assets/mobile atas.png"
+                            className="w-[400px] block lg:hidden"
+                        />
                     </div>
                 </div>
 
                 <div className="flex flex-shrink basis-auto flex-col relative z-5">
-                    <svg 
+                    <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 1440 300"
                         className="absolute bottom-0"
@@ -45,7 +51,22 @@ export default function LandingHome() {
             <img
                 src="Assets/Images/home_assets/tube.png"
                 alt="Left Decoration"
-                className="absolute top-[280px] md:top-[380px] left-[-250px] md:left-[-190px] w-[510px] md:w-[851px] overflow-hidden z-10"
+                className="absolute top-[280px] md:top-[310px] left-[-250px] md:left-[-250px] w-[510px] md:w-[851px] overflow-hidden z-10"
+            />
+            <img
+                src="Assets/Images/home_assets/kiwi.png"
+                alt="Kiwi"
+                className="absolute top-[0px] md:top-[1500px] left-[0px] md:left-[-170px] w-[0px] md:w-[450px] overflow-hidden z-10"
+            />
+            <img
+                src="Assets/Images/home_assets/bubble 2.png"
+                alt="Bubble big"
+                className="absolute top-[0px] md:top-[1145px] left-[0px] md:left-[-50px] w-[0px] md:w-[130px] overflow-hidden z-10"
+            />
+            <img
+                src="Assets/Images/home_assets/bubble 2.png"
+                alt="Bubble small"
+                className="absolute top-[0px] md:top-[1230px] left-[0px] md:left-[20px] w-[0px] md:w-[70px] overflow-hidden z-10"
             />
         </div>
     );
