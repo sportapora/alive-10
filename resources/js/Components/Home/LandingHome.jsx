@@ -56,17 +56,17 @@ export default function LandingHome() {
             <img
                 src="Assets/Images/home_assets/kiwi.png"
                 alt="Kiwi"
-                className="absolute top-[0px] md:top-[1500px] left-[0px] md:left-[-170px] w-[0px] md:w-[450px] overflow-hidden z-10"
+                className="absolute top-[0px] md:top-[1700px] left-[0px] md:left-[-170px] w-[0px] md:w-[450px] overflow-hidden z-10"
             />
             <img
                 src="Assets/Images/home_assets/bubble 2.png"
                 alt="Bubble big"
-                className="absolute top-[0px] md:top-[1145px] left-[0px] md:left-[-50px] w-[0px] md:w-[130px] overflow-hidden z-10"
+                className="absolute top-[0px] md:top-[1395px] left-[0px] md:left-[-50px] w-[0px] md:w-[130px] overflow-hidden z-10"
             />
             <img
                 src="Assets/Images/home_assets/bubble 2.png"
                 alt="Bubble small"
-                className="absolute top-[0px] md:top-[1230px] left-[0px] md:left-[20px] w-[0px] md:w-[70px] overflow-hidden z-10"
+                className="absolute top-[0px] md:top-[1480px] left-[0px] md:left-[20px] w-[0px] md:w-[70px] overflow-hidden z-10"
             />
         </div>
     );
