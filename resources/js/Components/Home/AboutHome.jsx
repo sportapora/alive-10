@@ -3,8 +3,8 @@ import React from "react";
 export default function AboutHome() {
     return (
         <>
-            <div className="flex flex-col md:flex-row bg-[#EAC09E] justify-center">
-                <div className=" flex justify-center">
+            <div className="flex flex-col md:flex-row bg-[#EAC09E]">
+                <div className="flex justify-around">
                     <img
                         src="Assets/Images/home_assets/logo alive-04.png"
                         className="w-[108px] md:w-[369px] h-[100%] object-contain"
