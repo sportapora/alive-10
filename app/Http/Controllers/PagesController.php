@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\GalleryResource;
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -24,36 +26,9 @@ class PagesController extends Controller
 
     public function gallery()
     {
-        return Inertia::render('Posts/Gallery');
-    }
+        $photos = GalleryResource::collection(Gallery::filter(request('filter'))->get());
+        $path = asset('/storage/gallery');
 
-    public function pleno1()
-    {
-        return Inertia::render('Posts/IsiGallery/Pleno1');
-    }
-
-    public function pleno2()
-    {
-        return Inertia::render('Posts/IsiGallery/Pleno2');
-    }
-
-    public function pleno3()
-    {
-        return Inertia::render('Posts/IsiGallery/Pleno3');
-    }
-
-    public function booth()
-    {
-        return Inertia::render('Posts/IsiGallery/Booth');
-    }
-
-    public function workshop()
-    {
-        return Inertia::render('Posts/IsiGallery/Workshop');
-    }
-
-    public function talkshow()
-    {
-        return Inertia::render('Posts/IsiGallery/Talkshow');
+        return Inertia::render('Posts/Gallery', compact('photos', 'path'));
     }
 }

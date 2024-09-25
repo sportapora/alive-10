@@ -17,4 +17,11 @@ class Gallery extends Model
             'image' => 'array',
         ];
     }
+
+    public function scopeFilter($query, $request)
+    {
+        $request
+            ? $query->where('category', 'like', '%' . $request . '%')
+            : $query;
+    }
 }

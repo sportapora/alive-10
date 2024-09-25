@@ -3,7 +3,6 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.jsx";
 import InputLabel from "@/Components/InputLabel.jsx";
 import InputError from "@/Components/InputError.jsx";
 import PrimaryButton from "@/Components/PrimaryButton.jsx";
-import {useEffect} from "react";
 
 export default function UploadGalleryPhoto({auth}) {
     const {flash} = usePage().props;
@@ -21,7 +20,6 @@ export default function UploadGalleryPhoto({auth}) {
 
         });
     }
-
 
     return (
         <AuthenticatedLayout
