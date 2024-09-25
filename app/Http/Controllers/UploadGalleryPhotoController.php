@@ -17,7 +17,8 @@ class UploadGalleryPhotoController extends Controller
         try {
             $data = $request->validate([
                 'category' => 'required|string|max:30',
-                'image' => 'required'
+                'image' => 'required',
+                'image.*' => 'image|mimes:jpeg,jpg,png'
             ]);
 
             $storeImage = [];
