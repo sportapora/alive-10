@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutHome(){
     return(
         <>
-            <div className='flex h-screen bg-[#BF90C1]'>
+            <div className='flex pb-20 bg-[#BF90C1]'>
                 <div className="flex-grow flex-shrink">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" className='w-screen'>
                         <path
