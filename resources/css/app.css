@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Jost;
-    src: url('/Assets/Fonts/Jost/Jost-VariableFont_wght.ttf');
+    font-family: JOST;
+    src: url(/public/Assets/Fonts/Jost/Jost-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: Modak;
-    src: url('/Assets/Fonts/Modak/Modak-Regular.ttf');
+    src: url(/public/Assets/Fonts/Modak/Modak-Regular.ttf);
 }

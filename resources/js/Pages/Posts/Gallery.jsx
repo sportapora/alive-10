@@ -1,8 +1,19 @@
+import Navbar from '@/Components/SmallComp/Navbar'
+import FooterGallery from '@/Components/SmallComp/FooterGallery.jsx'
 import React from 'react'
+import {Head} from "@inertiajs/react";
+import Introduction from '@/Components/Gallery/Introduction'
 
-function Gallery() {
+function Gallery({photos, path}) {
   return (
-    <div>Gallery</div>
+    <>
+        <Head title="Gallery" />
+      <div>
+        <Navbar color="orange"/>
+        <Introduction theme="dark" bgimg="shelf" photos={photos} path={path}/>
+        <FooterGallery />
+      </div>
+    </>
   )
 }
 

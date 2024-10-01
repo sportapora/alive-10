@@ -18,7 +18,7 @@ function Home() {
     }, []);    
     return (
         <div className="w-screen overflow-hidden">
-            <Navbar />
+            <Navbar color="orange"/>
             <LandingHome />
             <AboutHome />
             <Filosofi />
