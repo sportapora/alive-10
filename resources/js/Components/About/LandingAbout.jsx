@@ -24,7 +24,7 @@ function LandingAbout() {
                     <div className="flex flex-row mt-20">
                         <img
                             alt="ALIVE 9.0"
-                            className="md:w-[400px] md:h-[600px] rounded-[60px] w-[350px] h-[400px] md:relative absolute md:top-0 md:left-0 top-[100%] right-[20%] object-cover" src="/Assets/Images/about/about-2.jpg" />
+                            className="md:w-[400px] md:h-[600px] rounded-[60px] w-[350px] h-[400px] md:relative absolute md:top-0 md:left-0 top-[100%] right-[20%] object-cover" src="/Assets/Images/about/about-3.jpg" />
                         <img
                             alt="ALIVE 9.0"
                             className="md:w-[300px] md:h-[400px] rounded-[60px] w-[250px] h-[300px] absolute inset-0 md:top-[35%] md:left-[60%] lg:left-[75%] lg:top-[25%] top-[75%] left-[50%] object-cover" src="/Assets/Images/about/about-1.jpg" />
