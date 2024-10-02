@@ -1,16 +1,15 @@
-import Gambar from '../../../../public/Assets/Images/81970.jpg'
 import React from "react";
 
 function LandingAbout() {
     return (
         <>
-            <div className="bg-[#EAC09E] h-[1200px] md:h-[1000px] lg:h-[900px] md:p-0 p-10 overflow-hidden">
-                <div className="flex md:flex-row flex-col gap-20 items-center justify-center relative top-20">
-                    <div className="flex flex-col text-black md:text-justify text-center md:w-[40%] w-[80%]">
+            <div className="bg-[#EAC09E] h-[1200px] md:h-[1300px] lg:h-[900px] md:p-0 p-10 overflow-hidden">
+                <div className="flex lg:flex-row flex-col gap-20 items-center justify-center relative top-20">
+                    <div className="flex flex-col text-black md:text-justify text-center lg:w-[40%] w-[80%]">
                         <h1 className="font-extrabold font-jost md:text-[50px] text-[28px]">
                             About ALIVE
                         </h1>
-                        <p className="md:text-[20px] text-[14px] text-left">
+                        <p className="md:text-[18px] text-[16px] mt-4 text-left">
                             ALIVE 10.0 adalah acara tahunan yang merupakan program kerja dari UMN Medical Center.
                             Kembali hadir dengan tema “Skin Healthiness” yang merupakan edukasi tentang kesehatan kulit,
                             dirancang untuk memberikan pengetahuan mendalam dan praktis tentang perawatan kulit. Acara
@@ -23,14 +22,12 @@ function LandingAbout() {
                         </p>
                     </div>
                     <div className="flex flex-row mt-20">
-                        <div
-                            className="md:w-[400px] md:h-[600px] rounded-[60px] w-[350px] h-[400px] md:relative absolute md:top-0 md:left-0 top-[100%] right-[20%] bg-white"></div>
-                        <div
-                            className="md:w-[300px] md:h-[400px] rounded-[60px] w-[250px] h-[300px] absolute inset-0 md:top-[25%] md:left-[75%] top-[75%] left-[50%] bg-slate-300 flex items-center justify-center">
-                            {/*<img src={Gambar}*/}
-                            {/*     className="rounded-md w-48"*/}
-                            {/*     alt=""/>*/}
-                        </div>
+                        <img
+                            alt="ALIVE 9.0"
+                            className="md:w-[400px] md:h-[600px] rounded-[60px] w-[350px] h-[400px] md:relative absolute md:top-0 md:left-0 top-[100%] right-[20%] object-cover" src="/Assets/Images/about/about-2.jpg" />
+                        <img
+                            alt="ALIVE 9.0"
+                            className="md:w-[300px] md:h-[400px] rounded-[60px] w-[250px] h-[300px] absolute inset-0 md:top-[35%] md:left-[60%] lg:left-[75%] lg:top-[25%] top-[75%] left-[50%] object-cover" src="/Assets/Images/about/about-1.jpg" />
                     </div>
                 </div>
             </div>
