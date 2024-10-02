@@ -18,11 +18,11 @@ export default function LandingHome() {
                     </div>
                     <div className="flex flex-row justify-center w-[1050px] relative z-10">
                         <img
-                            src="Assets/Images/home_assets/maskot_merged.png"
+                            src="/Assets/Images/home_assets/maskot_merged.png"
                             className="w-[712px] hidden lg:block"
                         />
                         <img
-                            src="Assets/Images/home_assets/mobile atas.png"
+                            src="/Assets/Images/home_assets/mobile atas.png"
                             className="w-[400px] block lg:hidden"
                         />
                     </div>
@@ -44,27 +44,27 @@ export default function LandingHome() {
                 </div>
             </div>
             <img
-                src="Assets/Images/home_assets/Asset_Kanan.png"
+                src="/Assets/Images/home_assets/Asset_Kanan.png"
                 alt="Right Decoration"
-                className="absolute top-[280px] -right-[50%] lg:-right-[290px] w-[700px] overflow-hidden z-10"
+                className="hidden md:block absolute top-[280px] md:top-[60%] -right-[50%] md:-right-[40%] lg:-right-[15%] w-[700px] overflow-hidden z-10"
             />
             <img
-                src="Assets/Images/home_assets/tube.png"
+                src="/Assets/Images/home_assets/tube.png"
                 alt="Left Decoration"
-                className="absolute top-[60%] lg:top-[310px] -left-[45%] lg:left-[-250px] w-[510px] lg:w-[851px] overflow-hidden z-10"
+                className="absolute top-[60%] lg:top-[50%] -left-[45%] md:left-[-230px] lg:left-[-250px] w-[510px] lg:w-[851px] overflow-hidden z-10"
             />
             <img
-                src="Assets/Images/home_assets/kiwi.png"
+                src="/Assets/Images/home_assets/kiwi.PNG"
                 alt="Kiwi"
-                className="absolute top-[400px] lg:top-[1800px] left-[80px] lg:left-[-170px] w-[0px] lg:w-[450px] overflow-hidden z-10"
+                className="absolute top-[400px] md:top-[4000px] lg:top-[1800px] left-[80px] md:left-[-170px] lg:left-[-170px] w-[0px] lg:w-[450px] overflow-hidden z-10"
             />
             <img
-                src="Assets/Images/home_assets/bubble 2.png"
+                src="/Assets/Images/home_assets/bubble 2.PNG"
                 alt="Bubble big"
-                className="absolute top-[0px] lg:top-[1395px] left-[0px] lg:left-[-50px] w-[0px] lg:w-[130px] overflow-hidden z-10"
+                className="absolute top-[0px] md:top-[1395px] left-[0px] md:left-[-50px] w-[0px] lg:w-[130px] overflow-hidden z-10"
             />
             <img
-                src="Assets/Images/home_assets/bubble 2.png"
+                src="/Assets/Images/home_assets/bubble 2.PNG"
                 alt="Bubble small"
                 className="absolute top-[0px] lg:top-[1480px] left-[0px] lg:left-[20px] w-[0px] lg:w-[70px] overflow-hidden z-10"
             />

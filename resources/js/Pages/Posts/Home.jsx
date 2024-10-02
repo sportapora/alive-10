@@ -4,6 +4,7 @@ import LandingHome from "@/Components/Home/LandingHome";
 import AboutHome from "@/Components/Home/AboutHome";
 import Filosofi from "@/Components/Home/Filosofi";
 import FooterHome from "@/Components/Home/FooterHome";
+import {Head} from "@inertiajs/react";
 
 function Home() {
     useEffect(() => {
@@ -11,19 +12,22 @@ function Home() {
         document.body.style.overflowX = "hidden";
         document.body.style.overflowY = "auto";
         return () => {
-          console.log("Cleanup is happening");
-          document.body.style.overflowX = "visible";
-          document.body.style.overflowY = "visible";
+            console.log("Cleanup is happening");
+            document.body.style.overflowX = "visible";
+            document.body.style.overflowY = "visible";
         };
-    }, []);    
+    }, []);
     return (
-        <div className="w-screen overflow-hidden">
+        <>
+            <Head title="Home"/>
             <Navbar color="orange"/>
-            <LandingHome />
-            <AboutHome />
-            <Filosofi />
-            <FooterHome />
-        </div>
+            <div className="w-screen overflow-hidden">
+                <LandingHome/>
+                <AboutHome/>
+                <Filosofi/>
+                <FooterHome/>
+            </div>
+        </>
     );
 }
 
