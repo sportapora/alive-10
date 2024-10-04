@@ -46,17 +46,12 @@ export default function LandingHome() {
             <img
                 src="/Assets/Images/home_assets/Asset_Kanan.png"
                 alt="Right Decoration"
-                className="hidden md:block absolute top-[280px] md:top-[60%] -right-[50%] md:-right-[40%] lg:-right-[15%] w-[700px] overflow-hidden z-10"
+                className="absolute top-[280px] -right-[300px] w-[700px] invisible lg:visible overflow-hidden z-10"
             />
             <img
                 src="/Assets/Images/home_assets/tube.png"
                 alt="Left Decoration"
                 className="absolute top-[60%] lg:top-[50%] -left-[45%] md:left-[-230px] lg:left-[-250px] w-[510px] lg:w-[851px] overflow-hidden z-10"
-            />
-            <img
-                src="/Assets/Images/home_assets/kiwi.PNG"
-                alt="Kiwi"
-                className="absolute top-[400px] md:top-[4000px] lg:top-[1800px] left-[80px] md:left-[-170px] lg:left-[-170px] w-[0px] lg:w-[450px] overflow-hidden z-10"
             />
             <img
                 src="/Assets/Images/home_assets/bubble 2.PNG"
