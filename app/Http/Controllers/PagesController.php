@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\GalleryResource;
-use App\Models\Gallery;
-use Illuminate\Http\Request;
+// use App\Http\Resources\GalleryResource;
+// use App\Models\Gallery;
+// use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 
@@ -26,9 +26,9 @@ class PagesController extends Controller
 
     public function gallery()
     {
-        $photos = GalleryResource::collection(Gallery::filter(request('filter'))->get());
-        $path = asset('/storage/gallery');
+        // $photos = GalleryResource::collection(Gallery::filter(request('filter'))->get());
+        $path = asset('/Assets/Images/gallery');
 
-        return Inertia::render('Posts/Gallery', compact('photos', 'path'));
+        return Inertia::render('Posts/Gallery', compact('path'));
     }
 }

@@ -9,7 +9,7 @@ function LandingAbout() {
                         <h1 className="font-extrabold font-jost md:text-[50px] text-[28px]">
                             About ALIVE
                         </h1>
-                        <p className="md:text-[24px] text-[16px] mt-4 text-justify">
+                        <p className="md:text-[24px] text-[18px] mt-4 text-justify">
                             ALIVE 10.0 adalah acara tahunan yang merupakan program kerja dari UMN Medical Center.
                             Kembali hadir dengan tema “Skin Healthiness” yang merupakan edukasi tentang kesehatan kulit,
                             dirancang untuk memberikan pengetahuan mendalam dan praktis tentang perawatan kulit. Acara

@@ -13,13 +13,10 @@ function MascotAbout() {
               <h1 className=' font-extrabold font-jost text-[90px] text-[#C97A40] -rotate-90'>
                 HYDRO
               </h1>
-              {/*<h1 className='text-[#C97A40] font-extrabold font-jost text-[90px] rotate-90'>*/}
-              {/*  HYDRA*/}
-              {/*</h1>*/}
             </div>
             <div className='w-1/4 z-20 inset-0'>
               <h1 className='text-[40px] font-extrabold font-jost'>Hydro</h1>
-              <p className='text-[20px]'>
+              <p className='text-[22px]'>
                 "Hydro", maskot berwarna kuning yang optimis dan penuh percaya diri akan menjaga keseruan dalam setiap acara ALIVE 10.0 dengan semangat nya yang luar biasa. Kedua maskot ini menggunakan headband sebagai simbol proteksi, mendorong peserta ALIVE 10.0 untuk selalu menjaga dan memahami pentingnya kelembaban kulit.
               </p>
             </div>
@@ -36,15 +33,10 @@ function MascotAbout() {
             </div>
             <div className='w-1/4 text-right z-20 inset-0'>
               <h1 className='text-[40px] font-extrabold font-jost'>Hydra</h1>
-              <p className='text-[20px] z-10'>
+              <p className='text-[22px] z-10'>
                 Nama kedua maskot ALIVE 10.0 ini berasal dari kata "hydration" yaitu zat yang menjaga kelembaban dan kesehatan kulit. “Hydra”, maskot berwarna ungu ini melambangkan ketenangan dan kebijaksanaan dalam perawatan kulit. Dengan ekspresi wajah riang, Hydra mengajak partisipan ALIVE 10.0 untuk menjaga kulit dengan semangat positif dan keceriaan.
               </p>
             </div>
-            {/* <div className='absolute'>
-              <h1 className='text-[#C97A40] font-extrabold font-jost text-[90px] rotate-90'>
-                HYDRA
-              </h1>
-            </div> */}
           </div>
         </div>
         <div className='bg-[#ED9948] h-auto xl:hidden block overflow-hidden'>
@@ -66,7 +58,7 @@ function MascotAbout() {
                     <h1 className='text-[30px] font-extrabold font-jost text-center'>
                         HYDRO
                     </h1>
-                    <p>
+                    <p className="text-[18px]">
                       "Hydro", maskot berwarna kuning yang optimis dan penuh percaya diri akan menjaga keseruan dalam setiap acara ALIVE 10.0 dengan semangat nya yang luar biasa. Kedua maskot ini menggunakan headband sebagai simbol proteksi, mendorong peserta ALIVE 10.0 untuk selalu menjaga dan memahami pentingnya kelembaban kulit.
                     </p>
                 </div>
@@ -83,7 +75,7 @@ function MascotAbout() {
                     <h1 className='text-[30px] font-extrabold font-jost text-center'>
                         HYDRA
                     </h1>
-                    <p className='text-right'>
+                    <p className='text-right text-[18px]'>
                       Nama kedua maskot ALIVE 10.0 ini berasal dari kata "hydration" yaitu zat yang menjaga kelembaban dan kesehatan kulit. “Hydra”, maskot berwarna ungu ini melambangkan ketenangan dan kebijaksanaan dalam perawatan kulit. Dengan ekspresi wajah riang, Hydra mengajak partisipan ALIVE 10.0 untuk menjaga kulit dengan semangat positif dan keceriaan.
                     </p>
                 </div>
