@@ -17,10 +17,10 @@ const LogoPhilosophy = () => {
                         ></div>
                     </div>
                     <p className="mt-10 font-jost font-extrabold text-lg md:text-3xl text-gray-800">
-                        Arm
+                        Tangan
                     </p>
-                    <p className="mt-16 lg:mt-20 font-jost font-semibold text-lg lg:text-2xl text-gray-800 text-center">
-                        Tangan: Mewakili fokus utama tahun ini yang menekankan
+                    <p className="mt-16 lg:mt-20 font-jost font-semibold text-lg lg:text-2xl text-gray-800 text-center px-4">
+                        Mewakili fokus utama tahun ini yang menekankan
                         pentingnya menjaga kesehatan kulit.
                     </p>
                 </div>
@@ -37,10 +37,10 @@ const LogoPhilosophy = () => {
                         ></div>
                     </div>
                     <p className="mt-10 font-jost font-extrabold text-lg md:text-3xl text-gray-800">
-                        Heart
+                        Simbol Hati
                     </p>
-                    <p className="mt-16 lg:mt-20 font-jost font-semibold text-lg lg:text-2xl text-gray-800 text-center">
-                        Simbol Hati: Melambangkan kepedulian terhadap kesehatan
+                    <p className="mt-16 lg:mt-20 font-jost font-semibold text-lg lg:text-2xl text-gray-800 text-center px-4">
+                        Melambangkan kepedulian terhadap kesehatan
                         kulit mahasiswa.
                     </p>
                 </div>
@@ -57,10 +57,10 @@ const LogoPhilosophy = () => {
                         ></div>
                     </div>
                     <p className="mt-10 font-jost font-extrabold text-lg md:text-3xl text-gray-800">
-                        Cross
+                        Palang Hijau
                     </p>
-                    <p className="mt-16 lg:mt-20 font-jost font-semibold text-lg lg:text-2xl text-gray-800 text-center">
-                        Palang Hijau: Simbol identitas dari UMN Medical Center,
+                    <p className="mt-16 lg:mt-20 font-jost font-semibold text-lg lg:text-2xl text-gray-800 text-center px-4">
+                        Simbol identitas dari UMN Medical Center,
                         penyelenggara acara ini.
                     </p>
                 </div>
@@ -81,7 +81,7 @@ const LogoPhilosophy = () => {
                 className="absolute -bottom-[200px] -right-[200px] w-[399px] z-5 lg:invisible"
             />
             <img
-                src="/Assets/Images/home_assets/daun 1.png"
+                src="/Assets/Images/home_assets/daun 1.PNG"
                 alt="Daun 1"
                 className="absolute -bottom-[150px] -left-[120px] w-[271px] lg:invisible"
             />

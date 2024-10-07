@@ -3,7 +3,7 @@ import React from "react";
 export default function LandingHome() {
     return (
         <div>
-            <div className="relative flex flex-col h-screen bg-[#ED9947]">
+            <div className="relative flex flex-col h-screen bg-[#ED9947] overflow-hidden">
                 <div className="bg-[#ED9947] flex flex-col lg:flex-row gap-4 relative items-center justify-center lg:left-20 flex-auto">
                     <div className="w-screen inset-0 relative z-40 font-jost text-white text-center lg:text-left">
                         <h2 className="text-2xl lg:text-5xl mb-2">
@@ -46,7 +46,7 @@ export default function LandingHome() {
             <img
                 src="/Assets/Images/home_assets/Asset_Kanan.png"
                 alt="Right Decoration"
-                className="absolute top-[280px] -right-[300px] w-[700px] invisible lg:visible overflow-hidden z-10"
+                className="absolute top-[280px] -right-[300px] w-[700px] hidden lg:block overflow-hidden z-10"
             />
             <img
                 src="/Assets/Images/home_assets/tube.png"

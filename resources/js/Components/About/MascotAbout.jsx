@@ -13,9 +13,9 @@ function MascotAbout() {
               <h1 className=' font-extrabold font-jost text-[90px] text-[#C97A40] -rotate-90'>
                 HYDRO
               </h1>
-              <h1 className='text-[#C97A40] font-extrabold font-jost text-[90px] rotate-90'>
-                HYDRA
-              </h1>
+              {/*<h1 className='text-[#C97A40] font-extrabold font-jost text-[90px] rotate-90'>*/}
+              {/*  HYDRA*/}
+              {/*</h1>*/}
             </div>
             <div className='w-1/4 z-20 inset-0'>
               <h1 className='text-[40px] font-extrabold font-jost'>Hydro</h1>

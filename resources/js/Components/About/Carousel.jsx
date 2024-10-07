@@ -43,9 +43,9 @@ function Carousel() {
                         setFocusElement={setFocusElement}
                         className=''
                     />
-                    <div className="text-black relative left-[200px] w-[700px]">
+                    <div className="text-black relative left-[200px] w-[900px]">
                         <h1 className='text-[40px] font-extrabold font-jost'>{info[focusElement]}</h1>
-                        <p className='text-justify'>{desc[focusElement]}</p>
+                        <p className='text-justify text-2xl'>{desc[focusElement]}</p>
                     </div>
                 </div>
                 <div className="relative top-[-850px] left-[-100px] w-[900px] h-[900px] border-[14px] border-black rounded-full inset-0 z-10"></div>
@@ -68,10 +68,10 @@ function Carousel() {
                     />
                     <div className="text-black top-[100px] relative left-0 w-[300px]">
                         <h1 className='text-[40px] text-center font-extrabold font-jost'>{info[focusElement]}</h1>
-                        <p className='text-left'>{desc[focusElement]}</p>
+                        <p className='text-left text-xl'>{desc[focusElement]}</p>
                     </div>
                 </div>
-                
+
             </div>
         </>
     )

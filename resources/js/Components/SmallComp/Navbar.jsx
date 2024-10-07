@@ -6,10 +6,10 @@ import Medic from "../../../../public/Assets/Images/medic_umn.png";
 
 function Navbar({ color }) {
     const Links = [
-        { name: "HOME", link: "/" },
-        { name: "ABOUT", link: "/about" },
-        { name: "FLOW", link: "/flow" },
-        { name: "GALLERY", link: "/gallery" },
+        { name: "HOME", link: route('home') },
+        { name: "ABOUT", link: route('about') },
+        { name: "FLOW", link: route('flow') },
+        { name: "GALLERY", link: route('gallery') },
     ];
 
     const [open, setOpen] = useState(false);
@@ -55,7 +55,7 @@ function Navbar({ color }) {
 
     return (
         <div
-            className={`w-[100%] fixed top-0 left-0 z-50 ${navBackground} transition-colors duration-300`}
+            className={`w-[100%] fixed top-0 left-0 z-50 ${navBackground} transition-colors duration-300 z-[99]`}
         >
             <div className="lg:flex items-center justify-between py-1 lg:px-10 px-7">
                 <div
@@ -82,7 +82,7 @@ function Navbar({ color }) {
                 </div>
                 <ul
                     className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static lg:z-auto z-[-1] left-0
-            w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in
+            w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in-out
             ${
                 open
                     ? `top-[96px] ${navBackground}`
@@ -94,7 +94,7 @@ function Navbar({ color }) {
                             key={index}
                             className={`lg:ml-8 text-[16px] hover:text-white lg:my-0 mr-6 my-7 text-center ${textColor}`}
                         >
-                            <Link href={link.link}>{link.name}</Link>
+                            <Link href={link.link} className="backdrop-blur-md">{link.name}</Link>
                         </li>
                     ))}
                 </ul>
