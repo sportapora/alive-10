@@ -9,7 +9,7 @@ function Gallery({path}) {
         <Head title="Gallery" />
       <div>
         <Navbar color="orange"/>
-        <Introduction theme="dark" bgimg="shelf" path={path}/>
+        <Introduction theme="dark" path={path}/>
         <FooterGallery />
       </div>
     </>
