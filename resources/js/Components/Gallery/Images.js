@@ -16,6 +16,23 @@ const Images = [
             "pleno1/12.JPG",
         ],
     },
+    {
+        category: "Pleno 2",
+        images: [
+            "pleno2/1.jpg",
+            "pleno2/2.jpg",
+            "pleno2/3.jpg",
+            "pleno2/4.jpg",
+            "pleno2/5.jpg",
+            "pleno2/6.jpg",
+            "pleno2/7.jpg",
+            "pleno2/8.jpg",
+            "pleno2/9.jpg",
+            "pleno2/10.jpg",
+            "pleno2/11.jpg",
+            "pleno2/12.jpg",
+        ],
+    },
 ];
 
 export default Images;
